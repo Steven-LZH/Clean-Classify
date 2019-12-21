@@ -1,0 +1,43 @@
+<!--pages/join1/join1.wxml-->
+
+
+
+ <view class="waveWrapper waveAnimation">
+    
+    <view class="waveWrapperInner bgMiddle">
+      <view class="wave waveMiddle" style="background-image:url('https://s2.ax1x.com/2019/12/08/QaU38A.gif')"></view>
+    </view>
+    
+  </view>
+  
+<view class="cu-bar search bg-white">
+    <view class="search-form round lg">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="输入你要丢的垃圾名称" bindinput="bindKeyInput"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-green shadow-blur round lg" bindtap="search">手动搜索</button>
+    </view>
+  </view>
+
+
+
+<view class="cu-bar search bg-white margin-top-xl">
+    <view class="action">
+      <button class="cu-btn round lg bg-mauve sm" bindtouchstart="streamRecord"
+      bindtouchend="streamRecordEnd" bindtap='loadModal'>语音识别</button>
+    </view>
+    <view class="search-form round lg">
+      <text class="margin-left-sm text-grey text-lg">语音识别内容：{{currentText}} </text>
+      
+    </view>
+  </view>
+  
+<button class="cu-btn round lg bg-blue lg margin-top-xl flex solid-bottom padding justify-center" bindtap="actionSheetTap">直接打开垃圾桶盖</button>
+
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+  <image src='/pages/image/logo.jpg' class='jpg' mode='aspectFit'></image>
+  <view class='gray-text'>加载中...</view>
+</view>
+

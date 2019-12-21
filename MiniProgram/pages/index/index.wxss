@@ -1,0 +1,14 @@
+	.tower-swiper .tower-item {
+		transform: scale(calc(0.5 + var(--index) / 10));
+		margin-left: calc(var(--left) * 100rpx - 150rpx);
+		z-index: var(--index);
+	}
+  .title{
+    font-size: 3em;
+    text-align: center;
+    font-family:cursive;
+    color:  black;
+  }
+  .text-content{
+    font-size: 1em;
+  }

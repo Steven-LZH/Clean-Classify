@@ -1,0 +1,51 @@
+ 
+ <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key="id">
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+<!-- <view class="bg-img bg-mask padding-tb-xl" style="background-image: url('/pages/image/background.jpg');height:700rpx;">
+ -->
+
+
+<view class="title">分类桶桶</view>
+    
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">功能</view>
+    </view>
+    <view class="content">
+      <view class="desc">
+        <view class="text-content">通过语音询问对垃圾进行分类，弹出分类回答的同时转开相应的垃圾桶盖，便于用户正确地丢垃圾。用户也可直接使用微信小程序按钮打开相应的垃圾桶。 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">环境友好</view>
+          <view class="cu-tag bg-green light sm round">家用</view>
+          <view class="cu-tag bg-blue light sm round">Wifi环境</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+ 
+ <!--
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">功能</view>
+    </view>
+    <view class="content">
+      <view class="desc">
+        <view class="text-content">通过语音询问对垃圾进行分类，弹出分类回答的同时转开相应的垃圾桶盖，便于用户正确地丢垃圾。用户也可直接使用微信小程序按钮打开相应的垃圾桶。 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">环境友好</view>
+          <view class="cu-tag bg-green light sm round">家用</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+-->
+<!--</view>
+-->

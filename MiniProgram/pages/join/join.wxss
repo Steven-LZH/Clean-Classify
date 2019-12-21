@@ -1,0 +1,48 @@
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: relative;
+  height: 60rpx;
+  width: 100%;
+  background:black ;
+}
+
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 2160px;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+
+.wave image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.waveMiddle {
+  background-size: 1080px 66px;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 24s linear infinite;
+}
+
