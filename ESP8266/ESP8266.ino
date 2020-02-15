@@ -4,13 +4,13 @@
 
 
 
-const char* ssid = "LAPTOP-M6KFJVA6";
-const char* password = "Nb-87111";
+const char* ssid = "LAPTOP-M6KFJVA6";       //热点SSID
+const char* password = "********";          //热点密码
 const char* mqtt_server = "183.230.40.39";
 //
-const char* DeviceID = "562340823"; //设备号
-const char* ProductID = "289356";  //产品号
-const char* AuthInfo = "innovate2019"; //鉴权信息
+const char* DeviceID = "*********";         //OneNET设备号
+const char* ProductID = "******";           //OneNET产品号
+const char* AuthInfo = "************";      //OneNET鉴权信息
 
 WiFiClient espClient;
 PubSubClient client(espClient);
