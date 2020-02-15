@@ -67,11 +67,11 @@ Page({
               }
 
               wx.request({                                                //调用MQTT下发指令API
-                url: 'https://api.heclouds.com/cmds?device_id=562340823', //仅为示例，并非真实的接口地址
+                url: 'https://api.heclouds.com/cmds?device_id=*********', //仅为示例，并非真实的接口地址
                 data: String(that.data.id),
                 header: {
                   'content-type': ' text/plain', // 默认值
-                  'api-key': 'H6txx6=R1aSvNXESa33uDtgN3ng='
+                  'api-key': '****************************'
                 },
                 method: 'POST',
                 success(res) {
@@ -144,11 +144,11 @@ Page({
         console.log(e.tapIndex);
 
         wx.request({                                                //调用MQTT下发指令API
-          url: 'https://api.heclouds.com/cmds?device_id=562340823', //仅为示例，并非真实的接口地址
+          url: 'https://api.heclouds.com/cmds?device_id=*********',
           data: String(e.tapIndex + 1),
           header: {
             'content-type': ' text/plain', // 默认值
-            'api-key': 'H6txx6=R1aSvNXESa33uDtgN3ng='
+            'api-key': '****************************'
           },
           method: 'POST',
           success(res) {
